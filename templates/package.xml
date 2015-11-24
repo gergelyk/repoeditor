@@ -1,0 +1,11 @@
+<package name="com.example.NewPackage">
+  <title>New Package</title>
+  <description>Description of the new package.</description>
+  <icon>http://newpackage.example.com/icon32x32.png</icon>
+  <license>{license}</license>
+  <category>Your Category/Your Subcategory</category>
+  <link rel="homepage" href="http://newpackage.example.com"/>
+  <link rel="icon" href="http://newpackage.example.com/icon.png"/>
+  <link rel="changelog" href="http://newpackage.example.com/changelog.html"/>
+  <link rel="screenshot" href="http://newpackage.example.com/screenshot.png"/>
+</package>

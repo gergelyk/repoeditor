@@ -1,0 +1,8 @@
+<version name="1.0.0" package="{package}" type="one-file">
+  <file path=".Npackd\Install.bat">"%NIH%\InstallInnoSetup.bat"</file>
+  <file path=".Npackd\Uninstall.bat">"%NIH%\UninstallInnoSetup.bat" unins000.exe</file>
+  <dependency package="com.googlecode.windows-package-manager.NpackdInstallerHelper" versions="[1.3, 2)">
+  <variable>NIH</variable>
+  </dependency>
+  <url>http://newpackage.example.com/download/setup.exe</url>
+</version>
