@@ -1,38 +1,61 @@
 # repoeditor
+
 Editor of small and medium size repositories of Npackd package manager.
 
-## Installation
-The application requires Python3 with PyQt4 module installed.
 
-I assume that Linux users know what to do.
+## Linux Users
 
-Windows users are encouraged to accomplish following steps:
+** Installation **  
+Linux users are intended to simply copy source files to the destination directory. Python3 with PyQt4 module must me installed in the system.
 
-1. Install Python3 interpreter. You can download the installer here:
-  https://www.python.org/downloads/windows/
+** Running **  
+Simply invoke following command:
 
-  It's easier however to use npackd - which I guess you are interested in. Install either org.python.Python package if you are using 32-bit platform or org.python.Python64 package if you are using 64-bit platform.
+```
+python repoeditor.py
+```
 
-2. Install setuptools for Python. If you used one of the packages mentioned above, your setuptools are already installed.
+## Windows Users
 
-3. Associate .py file extension which Python interpreter which doesn't show console window. Open console and type:
-  ```
-  assoc .py=Python.NoConFile
-  ftype Python.NoConFile="C:\WINDOWS\pyw.exe" "%1" %*
-  ```
-  It may also be necessary to double click on the script and select Python interpreter as default application used for opening this file.
+** Installation **  
+Windows users are encouraged to use installer which installs compiled version of the application in their system.
 
-4. Add .py file extension to system variable PATHEXT. This will let you call Python scripts without extensions, directly in terminal, as they were executables.
+Alternatively repoeditor can be installed from the official repository using [npackd](http://npackd.appspot.com/) package manager.
 
-5. Install PyQt4 package for Python. You may decide to compile it from source, or download precompiled version from here:
-  http://www.lfd.uci.edu/~gohlke/pythonlibs/PyQt4-****.whl
+** Running **  
+Simply start repoeditor.exe, or use shortcut in your Start Menu.
 
-  Select package relevant to architecture of your platform and to version of your Python interpreter. Version of Python can be checked by invoking
-  ```
-  Python -V
-  ```
-  After downloading package go to command line and invoke:
-  ```
-  pip install PyQt4-****.whl
-  ```
-  **WARNING: There are some (hopefully) temporary problems with Python 3.5 and Qt4. Please use Python 3.4 instead.**
+** Building **  
+The application requires Python3 with PyQt4 module installed. Both modules come with [Anaconda](https://www.continuum.io/why-anaconda) package.
+
+In addition you need to install `dodo` and `PyInstaller` modules. This can be done by invoking:
+
+```
+pip install dodo
+pip install pyinstaller
+```
+Finally Inno Setup needs to be installed in order to build the installer.
+
+After preparing your environment as described above
+
+1. Update `version.txt` file with the version of repoeditor that you would like to build.
+
+2. In the top directory invoke:
+```
+doit installer
+```
+
+Alternatively you can invoke:
+```
+doit install
+```
+
+if you would like the tool chain to immediately install the application after building it. Installation directory can be specified in dodo.py
+
+Finally
+```
+doit clean
+```
+
+uninstalls the application and cleans working directory.
+
