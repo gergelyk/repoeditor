@@ -1,0 +1,14 @@
+# DoIt
+.doit.db.bak
+.doit.db.dat
+.doit.db.dir
+
+# PyInstaller
+__pycache__
+build
+dist
+
+# Inno Setup
+installer
+repoeditor.spec
+

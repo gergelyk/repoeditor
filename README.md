@@ -5,10 +5,12 @@ Editor of small and medium size repositories of Npackd package manager.
 
 ## Linux Users
 
-** Installation **  
+### Installation
+
 Linux users are intended to simply copy source files to the destination directory. Python3 with PyQt4 module must me installed in the system.
 
-** Running **  
+### Running
+
 Simply invoke following command:
 
 ```
@@ -17,15 +19,18 @@ python repoeditor.py
 
 ## Windows Users
 
-** Installation **  
+### Installation
+
 Windows users are encouraged to use installer which installs compiled version of the application in their system.
 
 Alternatively repoeditor can be installed from the official repository using [npackd](http://npackd.appspot.com/) package manager.
 
-** Running **  
+### Running
+
 Simply start repoeditor.exe, or use shortcut in your Start Menu.
 
-** Building **  
+### Building
+
 The application requires Python3 with PyQt4 module installed. Both modules come with [Anaconda](https://www.continuum.io/why-anaconda) package.
 
 In addition you need to install `dodo` and `PyInstaller` modules. This can be done by invoking:
