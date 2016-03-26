@@ -7,6 +7,7 @@ from PyQt4.QtGui import QMainWindow, QDesktopWidget, QAction, QActionGroup, QIco
 from PyQt4.QtGui import QSizePolicy
 from repoeditor.xmleditor import XmlEditor
 from repoeditor.feedbacks import *
+from repoeditor.version import APP_VERSION
 
 class Gui(QMainWindow):
     """Main window of Qt application.
@@ -254,7 +255,7 @@ class Gui(QMainWindow):
     def show_about(self, db):
         """Shows MsgBox with information about the application.
         """
-        msg = db.app_version + """
+        msg = 'npackd-repoeditor ' + APP_VERSION + """
 Author: Grzegorz Krasoń
 
 This application is intended to be used for editing small and medium size repositories of Npackd package manager.

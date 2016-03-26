@@ -36,19 +36,3 @@ Windows users are encouraged to accomplish following steps:
   pip install PyQt4-****.whl
   ```
   **WARNING: There are some (hopefully) temporary problems with Python 3.5 and Qt4. Please use Python 3.4 instead.**
-
-## Usage
-To start repoeditor simply double click repoeditor.py file, or go to console
-and invoke:
-```
-repoeditor
-```
-
-## Notes
-Your browser may not display XML file as expected until you copy `summary.xls`
-file to the same directory where XML file is. `summary.xls` can be found in
-`<repoeditor>/templates` directory. If you don't want to use such file, remove:
-
-`<?xml-stylesheet type="text/xsl" href="summary.xsl"?>`
-
-line in `<repoeditor>/templates/header.xml` and regenerate your XML file.

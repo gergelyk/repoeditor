@@ -25,9 +25,6 @@ class Database():
     # True until database is empty (no XML parsed, no data entered by user)
     empty = True
 
-    # Used as an initial title of Qt window
-    app_version = 'RepoEditor 1.0'
-
     def etitem_to_xml(self, etitem):
         """Converts ElementTree item to text in XML format
         """
@@ -134,7 +131,7 @@ class Database():
     def format_title(self):
         """Returns title suitable for Qt window.
         """
-        title = self.app_version
+        title = 'RepoEditor'
         if self.file_path:
             title += ' - ' + self.file_path + ['','*'][self.changed]
 
