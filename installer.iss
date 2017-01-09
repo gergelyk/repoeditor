@@ -7,9 +7,9 @@
 #undef VersionFile
 
 #define MyAppName "npackd-repoeditor"
-; #define MyAppVersion "1.0.0"
+; #define MyAppVersion "1.1.1"
 #define MyAppPublisher "Grzegorz Krasoń"
-#define MyAppURL "http://krason.biz/software/repoeditor.html"
+#define MyAppURL "http://krason.me/software/repoeditor.html"
 #define MyAppExeName "repoeditor.exe"
 
 [Setup]
