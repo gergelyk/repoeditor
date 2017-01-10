@@ -22,13 +22,13 @@ def task_version():
     """
     def create_version_file():
         version = get_version()
-        with open('src\\repoeditor\\version.py', 'w') as fh:
+        with open('src\\lib\\version.py', 'w') as fh:
             fh.write('APP_VERSION = "' + version + '"')
 
     return {
         'actions': [create_version_file],
 		'file_dep': ["version.txt"],
-		'targets': ["src\\repoeditor\\version.py"],
+		'targets': ["src\\lib\\version.py"],
 		'clean': True,
         }
 
@@ -38,7 +38,7 @@ def task_executable():
 
     return {
         'actions': ["pyinstaller -w -F -i res/repoeditor.ico src/repoeditor.py"],
-		'file_dep': ["src\\repoeditor\\version.py"],
+		'file_dep': ["src\\lib\\version.py"],
 		'targets': ["dist\\repoeditor.exe"],
 		'clean': ["rmdir /Q /S dist", "rmdir /Q /S build", "del repoeditor.spec"],
         }

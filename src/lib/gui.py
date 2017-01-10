@@ -5,9 +5,9 @@ import webbrowser
 from functools import partial
 from PyQt4.QtGui import QMainWindow, QDesktopWidget, QAction, QActionGroup, QIcon, QMessageBox, QWidget
 from PyQt4.QtGui import QSizePolicy
-from repoeditor.xmleditor import XmlEditor
-from repoeditor.feedbacks import *
-from repoeditor.version import APP_VERSION
+from lib.xmleditor import XmlEditor
+from lib.feedbacks import *
+from lib.version import APP_VERSION
 
 class Gui(QMainWindow):
     """Main window of Qt application.

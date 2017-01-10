@@ -2,8 +2,8 @@
 
 import sys
 from PyQt4.QtGui import QApplication
-from repoeditor.database import Database
-from repoeditor.gui import Gui
+from lib.database import Database
+from lib.gui import Gui
             
 def main():
     """Starts Qt GUI and connects it to database.

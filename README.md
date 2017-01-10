@@ -31,7 +31,7 @@ Simply start repoeditor.exe, or use shortcut in your Start Menu.
 
 ### Building
 
-The application requires Python3 with PyQt4 module installed. Both modules come with [Anaconda](https://www.continuum.io/why-anaconda) package.
+The application requires [Python3](https://www.continuum.io/why-anaconda) with [PyQt4](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pyqt4) module installed.
 
 In addition you need to install `dodo` and `PyInstaller` modules. This can be done by invoking:
 
@@ -64,3 +64,9 @@ doit clean
 
 uninstalls the application and cleans working directory.
 
+Following software versions have been used for building version 1.1.3:
+
+* Python 3.5.2 :: Anaconda 4.2.0 (64-bit)
+* PyInstaller 3.2
+* PyQt4-4.11.4-cp35-none-win_amd64
+* Inno Setup 5.5.9
