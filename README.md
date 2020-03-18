@@ -70,3 +70,9 @@ Following software versions have been used for building version 1.1.3:
 * PyInstaller 3.2
 * PyQt4-4.11.4-cp35-none-win_amd64
 * Inno Setup 5.5.9
+
+## Donations
+
+It is absolutely fine if you use this software for free for commercial or non-commercial purposes. On the other hand, if you would like to repay author's efforts you are welcome to use following button:
+
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D9KUJD9LTKJY8&source=url"><img border="0" alt="Pay at PayPal" src="https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif"></a>
